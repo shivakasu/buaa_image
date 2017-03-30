@@ -29,6 +29,7 @@ public class watermarkListener extends JFrame implements ActionListener {
     private JRadioButton GIF = new JRadioButton("gif");
     private JLabel gif = new JLabel("GIF");
     private String type;
+    private BufferedImage water;
 
     public watermarkListener(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
@@ -88,7 +89,7 @@ public class watermarkListener extends JFrame implements ActionListener {
 
                     JFrame frame2 = new JFrame();
                     JLabel label2 = new JLabel();
-                    waterMark trans = new waterMark(mainWindow.image,slider1.getValue()/100.0);
+                    waterMark trans = new waterMark(mainWindow.image,slider1.getValue()/100.0,water);
                     BufferedImage spec = trans.insert();
                     label2.setIcon(new ImageIcon(spec));
                     File outputfile = new File("water."+type);
@@ -131,7 +132,6 @@ public class watermarkListener extends JFrame implements ActionListener {
             ok.setEnabled(true);
         else
             ok.setEnabled(false);
-        BufferedImage carrier;
         JFileChooser file = new JFileChooser();
         String filePath;
         int feedback = file.showOpenDialog(null);
@@ -140,11 +140,11 @@ public class watermarkListener extends JFrame implements ActionListener {
             if (target != null) {
                 filePath = target.getAbsolutePath();
                 try {
-                    carrier = ImageIO.read(new File(filePath));
+                    water = ImageIO.read(new File(filePath));
                     PixelGrabber p;
-                    int[] array = new int[carrier.getWidth() * carrier.getHeight()];
+                    int[] array = new int[water.getWidth() * water.getHeight()];
                     try {
-                        p = new PixelGrabber(carrier, 0, 0, carrier.getWidth(), carrier.getHeight(), array, 0, carrier.getWidth());
+                        p = new PixelGrabber(water, 0, 0, water.getWidth(), water.getHeight(), array, 0, water.getWidth());
                         if (!p.grabPixels())
                             try {
                                 throw new Exception();

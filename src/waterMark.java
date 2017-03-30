@@ -18,12 +18,10 @@ public class waterMark {
     private double alpha;
     private int[][][] waterRecover;
 
-    public waterMark(BufferedImage carrier,double alpha){
+    public waterMark(BufferedImage carrier,double alpha,BufferedImage water){
         this.alpha = alpha;
         this.carrier = carrier;
-        try {
-            this.watermark = ImageIO.read(new File("E://water2.jpg"));
-        }catch(Exception e){}
+        this.watermark = water;
     }
 
     public waterMark(BufferedImage carrier,double alpha,int nwidth,int nheight){
