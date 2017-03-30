@@ -151,7 +151,14 @@ public class watermarkListener extends JFrame implements ActionListener {
                             } catch (Exception e1) {}
                     } catch (Exception e2){}
                 } catch (IOException e3) {}
-
+                JFrame frame3 = new JFrame();
+                JLabel label3 = new JLabel();
+                label3.setIcon(new ImageIcon(water));
+                Container c3 = frame3.getContentPane();
+                c3.add(label3);
+                frame3.pack();
+                frame3.setTitle("水印图像");
+                frame3.setVisible(true);
                 this.setVisible(true);
             }
         }

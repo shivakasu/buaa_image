@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d447d62c-bb49-46e5-b02d-ee2a9606be8f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cache.png" afterPath="$PROJECT_DIR$/cache.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/water.png" afterPath="$PROJECT_DIR$/water.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/waterMark.java" afterPath="$PROJECT_DIR$/src/waterMark.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/watermarkListener.java" afterPath="$PROJECT_DIR$/src/watermarkListener.java" />
     </list>
     <ignored path="image2.iws" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
+            <state relative-caret-position="23">
               <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
               <folding>
                 <element signature="method#showImage#0;class#MainWindow#0" expanded="false" />
@@ -39,21 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="waterrecoverListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/waterrecoverListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="watermarkListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="watermarkListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/watermarkListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="91" column="101" lean-forward="false" selection-start-line="91" selection-start-column="101" selection-end-line="91" selection-end-column="101" />
+            <state relative-caret-position="436">
+              <caret line="155" column="53" lean-forward="false" selection-start-line="155" selection-start-column="53" selection-end-line="155" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -69,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="waterMark.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="waterMark.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/waterMark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4049">
+            <state relative-caret-position="529">
               <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -747,15 +736,15 @@
       <workItem from="1490722615635" duration="2911000" />
       <workItem from="1490763965286" duration="24747000" />
       <workItem from="1490848400162" duration="25617000" />
-      <workItem from="1490893048924" duration="2504000" />
+      <workItem from="1490893048924" duration="3412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157099000" />
+    <option name="totallyTimeSpent" value="158007000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1347,16 +1336,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
-          <folding>
-            <element signature="method#showImage#0;class#MainWindow#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/compressListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
@@ -1365,29 +1344,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/waterMark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/waterrecoverListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="68">
           <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/watermarkListener.java">
+    <entry file="file://$PROJECT_DIR$/src/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="91" column="101" lean-forward="false" selection-start-line="91" selection-start-column="101" selection-end-line="91" selection-end-column="101" />
-          <folding />
+        <state relative-caret-position="23">
+          <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+          <folding>
+            <element signature="method#showImage#0;class#MainWindow#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/waterMark.java">
+    <entry file="file://$PROJECT_DIR$/src/watermarkListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4049">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="436">
+          <caret line="155" column="53" lean-forward="false" selection-start-line="155" selection-start-column="53" selection-end-line="155" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
