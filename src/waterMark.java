@@ -88,7 +88,7 @@ public class waterMark {
             c=0;
             loop:for(int i=0;i<dct.getN();i++)
                 for(int j=0;j<dct.getN();j++){
-                    if(i+j>=4 && i+j<=6) {
+                    if(i+j>=3 && i+j<=5) {
                         res[a][i][j] = alpha*(buffer[c]-128);
                         c++;
                         if(c==buffer.length)break loop;
@@ -107,7 +107,7 @@ public class waterMark {
         int c = 0;
         loop:for(int i=0;i<dct.getN();i++)
             for(int j=0;j<dct.getN();j++){
-                if(i+j>=4 && i+j<=6) {
+                if(i+j>=3 && i+j<=5) {
                     buffer[c] = carry[a][i][j]/alpha+128;
                     c++;
                     if(c==buffer.length)break loop;

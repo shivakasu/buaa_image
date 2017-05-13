@@ -407,6 +407,17 @@ public class FFT {
         BufferedImage cache = im;
         int [][][] colors = imgToMatrix(im, w0, h0,true,true);
         T = fct2(colors,1);
+        int count=0;
+        for (int j = 0; j < h0; j++)
+            for (int i = 0; i < w0; i++){
+                if(i+j>299) {
+                    count++;
+                    T[0][i][j] = 0;
+                    T[1][i][j] = 0;
+                    T[2][i][j] = 0;
+                }
+            }
+        System.out.print(w0+"  "+h0+"  "+count);
         int [][][] TT = new int[3][w0][h0];
         for (int k = 0; k <3; k++)
             for (int j = 0; j < h0; j++)
@@ -415,16 +426,16 @@ public class FFT {
                 }
 
 
-        BufferedImage jjy=null;
-        try{
-            jjy=ImageIO.read(new File("E://jjy.jpg"));
-        } catch(Exception eee){}
-        int[][][] jjjy=imgToMatrix(jjy,jjy.getWidth(),jjy.getHeight(),false,true);
-        for (int k = 0; k <3; k++)
-            for (int j = 0; j < jjy.getHeight(); j++)
-                for (int i = 0; i < jjy.getWidth(); i++){
-                        T[k][w0-1-i][h0-1-j] += jjjy[k][i][j]/30;
-                }
+//        BufferedImage jjy=null;
+//        try{
+//            jjy=ImageIO.read(new File("E://jjy.jpg"));
+//        } catch(Exception eee){}
+//        int[][][] jjjy=imgToMatrix(jjy,jjy.getWidth(),jjy.getHeight(),false,true);
+//        for (int k = 0; k <3; k++)
+//            for (int j = 0; j < jjy.getHeight(); j++)
+//                for (int i = 0; i < jjy.getWidth(); i++){
+//                        T[k][w0-1-i][h0-1-j] += jjjy[k][i][j]/30;
+//                }
 
         int w1=0,w2=w0,h1=0,h2=h0;
         if(b>a && d>c){

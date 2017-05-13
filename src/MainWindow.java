@@ -74,6 +74,18 @@ public class MainWindow extends JFrame {
         processMenu2.add(waterrecover);
         waterrecover.addActionListener(new waterrecoverListener(this));
 
+        JMenu processMenu3 = new JMenu("p3  ");
+        bar.add(processMenu3);
+        JMenuItem sobel = new JMenuItem("sobel边缘检测");
+        processMenu3.add(sobel);
+        sobel.addActionListener(new edgeListener(this,"sobel"));
+        JMenuItem prewitt = new JMenuItem("prewitt边缘检测");
+        processMenu3.add(prewitt);
+        prewitt.addActionListener(new edgeListener(this,"prewitt"));
+        JMenuItem laplace = new JMenuItem("laplace边缘检测");
+        processMenu3.add(laplace);
+        laplace.addActionListener(new edgeListener(this,"laplace"));
+
         this.setJMenuBar(bar);
 
         imageLabel = new JLabel("");

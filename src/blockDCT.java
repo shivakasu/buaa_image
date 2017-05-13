@@ -46,9 +46,9 @@ public class blockDCT {
         int outputData[][][] = new int[3][N][N];
         for (int i=0; i<N; i++)
             for (int j=0; j<N; j++) {
-                outputData[0][i][j] = (int)Math.round (inputData[0][i][j] / (Y[i][j] * QUALITY));
-                outputData[1][i][j] = (int) Math.round(inputData[1][i][j] / (UV[i][j] * QUALITY));
-                outputData[2][i][j] = (int) Math.round(inputData[2][i][j] / (UV[i][j] * QUALITY));
+                outputData[0][i][j] = (int)Math.round (inputData[0][i][j] / (Y[i][j] * QUALITY/3));
+                outputData[1][i][j] = (int) Math.round(inputData[1][i][j] / (UV[i][j] * QUALITY/3));
+                outputData[2][i][j] = (int) Math.round(inputData[2][i][j] / (UV[i][j] * QUALITY/3));
             }
         return outputData;
     }
@@ -57,9 +57,9 @@ public class blockDCT {
         int outputData[][][] = new int[3][N][N];
         for (int i=0; i<N; i++)
             for (int j=0; j<N; j++) {
-                outputData[0][i][j] =  inputData[0][i][j] * (Y[i][j] * QUALITY);
-                outputData[1][i][j] =  inputData[1][i][j] * (UV[i][j] * QUALITY);
-                outputData[2][i][j] =  inputData[2][i][j] * (UV[i][j] * QUALITY);
+                outputData[0][i][j] =  inputData[0][i][j] * (Y[i][j] * QUALITY/3);
+                outputData[1][i][j] =  inputData[1][i][j] * (UV[i][j] * QUALITY/3);
+                outputData[2][i][j] =  inputData[2][i][j] * (UV[i][j] * QUALITY/3);
             }
         return outputData;
     }
